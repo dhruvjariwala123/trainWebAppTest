@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ticketContainer {
+            display: inline-flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 400px;
+            height: fit-content;
+            box-shadow: 2px 3px 8px;
+            border-radius: 20px;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .headerLine {
+            width: 100%;
+            display: flex;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 35px;
+            background-color: rgb(23, 58, 253);
+            color: white;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .footerLine {
+            width: 100%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 20px;
+            background-color: orangered;
+        }
+
+        .ticketData {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .headerData {
+            margin-left: 20px;
+        }
+
+        .row {
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tDHeader {
+            font-weight: 700;
+            font-size: large;
+        }
+
+        .tRow {
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+        }
+
+        /* .barcode {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+        }
+
+        .barcodeImage {
+            width: 150px;
+            height: 50px;
+            transform: rotate(90deg);
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="ticketContainer">
+            <div class="headerLine">
+                <img src="ticketLogo.png" alt="">
+                <div class="headerData">My Ticket </div>
+            </div>
+            <div class="tRow">
+                <div class="ticketData">
+                    <div class="tDHeader">Train Details</div>
+                    <div class="row">
+                        <div>id : 102</div>
+                        <div>Rajdhani Express</div>
+                    </div>
+                    <div class="row">
+                        <div>Surat</div>
+                        TO
+                        <div>Delhi</div>
+                    </div>
+                    <div class="row">
+                        <div>Time : 8:30 to 10:30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerLine"></div>
+        </div>
+    </div>
+    <script>
+        let container = document.getElementById("container");
+        console.log(container)
+        let data = container.children[0].outerHTML;
+        console.log(data)
+        let count = 5;
+        for (let i = 0; i < count; i++) {
+            container.innerHTML = container.innerHTML + data;
+        }
+    </script>
+</body>
+
+</html>

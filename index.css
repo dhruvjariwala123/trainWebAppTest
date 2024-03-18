@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#navBar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#navBar .navElement:first-child {
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navElement {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+.navElement a {
+    text-decoration: none;
+    color: white;
+}
+
+.navElement:hover {
+    border-radius: 5px;
+    background-color: #007bff;
+}
+
+#searchTrain {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnSearch {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnSearch:hover {
+    background-color: #0056b3;
+}
+
+.trainHeader,
+.cartHeader {
+    background-color: #a2a2a2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#trainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.trainElement {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    height: min-content;
+    min-width: max-content;
+}
+
+.tRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.tName {
+    font-weight: bold;
+}
+
+
+.tEndPoint {
+    color: #555;
+    margin-left: 50px;
+}
+
+.tStartPoint {
+    color: #555;
+    margin-right: 50px;
+}
+
+.tTime {
+    color: #777;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.iRow {
+    text-align: start;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.iRow label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    font-size: 16px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btnAdd {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+#btnAdd:hover {
+    background-color: #0056b3;
+}
+
+.btnDelete {
+    background-color: rgb(249, 62, 62);
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btnAddToCart {
+    background-color: rgb(247, 181, 39);
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btnDelete:hover {
+    background-color: rgba(219, 66, 66, 0.567);
+}
+
+.btnAddToCart:hover {
+    background-color: rgba(222, 167, 49, 0.923);
+}
+
+.spacer {
+    display: inline;
+    width: 100%;
+}
+
+#cartIcon {
+    /* display: inline; */
+    width: 30px;
+    height: 30px;
+}
+
+#cartA {
+    display: flex;
+    justify-content: center;
+}
+
+#cartDiv {
+    margin-right: 30px;
+}
+
+#cartCount {
+    font-size: 10px;
+    color: white;
+}
+
+/* cart */
+#cartTrainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.cartTrainElement {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    height: min-content;
+    min-width: max-content;
+}
+
+.cartTRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.cartTName {
+    font-weight: bold;
+}
+
+
+.cartTEndPoint {
+    color: #555;
+    margin-left: 50px;
+}
+
+.cartTStartPoint {
+    color: #555;
+    margin-right: 50px;
+}
+
+.cartTTime {
+    color: #777;
+}
+
+.cartBtnDelete {
+    background-color: rgb(249, 62, 62);
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: min-content;
+}
+
+.cartBtnDelete:hover {
+    background-color: rgba(219, 66, 66, 0.936);
+}
+
+.cartTColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchCartTrain {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnCartSearch {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
